@@ -1,0 +1,115 @@
+%==============================================================================
+%%
+%%
+\documentclass[12pt]{article}
+
+%==============================================================================
+%%
+%%
+\usepackage{graphicx}
+\usepackage[margin=2.00cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{amssymb}
+\usepackage[fleqn]{amsmath}
+\usepackage{ulem}
+\usepackage{multicol}
+\usepackage{lastpage}
+\usepackage{pdflscape}
+\usepackage{etoolbox}
+\usepackage{textcomp}
+\usepackage[group-separator = {,},space-before-unit=true]{siunitx}
+%------------------------------------------------------------------------------
+%%
+%%
+\newcommand{\thinrule}{\noindent\rule{\linewidth}{0.5pt}}
+\renewcommand{\baselinestretch}{1.0}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{1em}
+\newcommand{\mybox}[1]{\framebox{$#1$\vphantom{$jk$}}}
+%\setlength{\mathindent}{0pt}
+
+%==============================================================================
+%%  
+%% PAGE HEADERS AND FOOTERS
+%%
+\pagestyle{fancy}
+\lhead{PHYS 1P22/1P92 Final Exam}
+\chead{}
+\rhead{Page \thepage~{}of \pageref{LastPage}}
+\cfoot{}
+\fancyhfoffset[L]{30pt}
+\fancyhfoffset[R]{30pt}
+%==============================================================================
+%%
+%%  ANSWER AND VERSION GENERATION
+%%
+\newtoggle{showanswer}
+\toggletrue{showanswer}
+%\togglefalse{showanswer}
+
+%==============================================================================
+%%
+%%  COVER PAGE
+%%
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+%------------------------------------------------------------------------------
+%%
+%%  EXAM INFORMATION
+%%
+\vspace{0.15in}
+{\large
+\begin{tabular}{lcl} 
+{\bf Brock University} & \hspace*{0.3in} &  {\bf PHYS 1P22/1P92}  \\
+{\bf Final Exam}       & & {\bf Number of pages:} \pageref{LastPage}  \\
+{\bf Date:} July 18, 2025	& & {\bf Time limit:} 3 hours                  \\
+{\bf Time:} 14:00--17:00     & & {\bf Instructor:} T.~Harroun.
+\end{tabular}
+}
+\end{center}
+
+%------------------------------------------------------------------------------
+%%
+%%  STUDENT NAME AND NUMBER
+%%
+\begin{center}
+
+{\Large
+\begin{tabular}{|r|c|}
+\hline
+Name	   & \hspace*{3.5in}	\\ \hline
+Student ID &            	    \\ \hline
+\end{tabular}
+}
+\end{center} 
+
+
+%------------------------------------------------------------------------------
+%%
+%%  INSTRUCTIONS
+%%
+\vspace{0cm}
+\begin{center}
+\textbf{Final Exam}
+\end{center}
+
+\vspace{1em}
+%
+No examination aids other than those specified on the examination scripts are permitted. Use or possession of unauthorized materials or electronic devices will result in a charge of academic misconduct under the University’s Academic Integrity Policy. (Brock FHB 9.1.2) 
+
+This is a closed--book test, only calculators are allowed. Formulas not on the supplied formula sheet must be constructed by the student from their knowledge of the material. Please attempt all questions. This exam has \pageref{LastPage} pages. Please verify that your copy is complete.
+
+
+%==============================================================================
+%%
+%%  QUESTIONS
+%%
+
+%== 1 =========================================================================
+\clearpage
+\thinrule\\
+1. (1 point.)\input{Chapter01/topic_01}
+
+
+\end{document}
